@@ -99,7 +99,7 @@ print(flat_list)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ## Mapa myśli
 
-![List Comprehensions](../../assets/image/Comprehensions/%20List%20Comprehensions.png)
+![List Comprehensions](../../assets/image/Comprehensions/List%20Comprehensions.png)
 
 ## Podsumowanie
 
