@@ -175,4 +175,4 @@ Operator wycinania w Pythonie jest bardzo wszechstronny i pozwala na łatwe i ef
 
 ## Zadania
 
-[Operator wycinania w Pythonie - Zadania](//Zadania/Operator%20wycinania/Operator%20wycinania.ipynb)
+[Operator wycinania w Pythonie - Zadania](../Zadania/Operator%20wycinania/Operator%20wycinania.ipynb)
