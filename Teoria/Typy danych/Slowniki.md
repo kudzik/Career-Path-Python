@@ -141,3 +141,33 @@ Słowniki posiadają wiele wbudowanych metod, które umożliwiają efektywne ope
 ## Podsumowanie
 
 Słowniki w Pythonie są potężnym narzędziem do przechowywania i manipulacji danymi w formie par klucz-wartość. Dzięki ich elastyczności i wydajności, są szeroko stosowane w różnych zastosowaniach, takich jak przechowywanie danych konfiguracyjnych, zliczanie wystąpień elementów, czy mapowanie identyfikatorów na wartości.
+
+## Przydatne metody
+
+### Przykład użycia metody `get()`
+
+1. **Użycie metody `get()` z kluczem, który istnieje w słowniku**:
+
+   ```python
+   slownik = {"imie": "Jan", "wiek": 25}
+   wartosc = slownik.get("imie")  # Zwraca "Jan"
+   print(wartosc)  # Output: Jan
+   ```
+
+2. **Użycie metody `get()` z kluczem, który nie istnieje w słowniku, bez wartości domyślnej**:
+
+   ```python
+   slownik = {"imie": "Jan", "wiek": 25}
+   wartosc = slownik.get("miasto")  # Zwraca None, ponieważ "miasto" nie istnieje w słowniku
+   print(wartosc)  # Output: None
+   ```
+
+3. **Użycie metody `get()` z kluczem, który nie istnieje w słowniku, z wartością domyślną**:
+
+   ```python
+   slownik = {"imie": "Jan", "wiek": 25}
+   wartosc = slownik.get("miasto", "Nieznane")  # Zwraca "Nieznane", ponieważ "miasto" nie istnieje w słowniku
+   print(wartosc)  # Output: Nieznane
+   ```
+
+Metoda `get()` pozwala na bezpieczne odczytywanie wartości ze słownika bez ryzyka wystąpienia błędu `KeyError`. Jeśli klucz nie istnieje, metoda ta zwraca `None` lub wartość domyślną, którą możemy określić jako drugi argument.
