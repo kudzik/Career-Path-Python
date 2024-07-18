@@ -141,6 +141,10 @@ Listy wspierają różnorodne operacje, takie jak:
    odwrócona = list(reversed(lista))  # [5, 4, 3, 2, 1]
    ```
 
+## Mapa myśli
+
+![Listy](../../assets/image/Typy%20dnych/Listy.png)
+
 ## Podsumowanie
 
 Listy w Pythonie są wszechstronnymi i elastycznymi strukturami danych, które umożliwiają przechowywanie, manipulację i operacje na zbiorach danych. Dzięki swojej zmienności i szerokiej gamie dostępnych metod, listy są idealnym narzędziem do codziennych zadań programistycznych.
