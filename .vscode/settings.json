@@ -1,0 +1,11 @@
+{
+  "CodeGPT.apiKey": "Ollama",
+  "CodeGPT.Autocomplete.enabled": true,
+  "CodeGPT.Autocomplete.maxTokens": 344,
+  "CodeGPT.Autocomplete.provider": "Ollama - codestral:latest",
+  "localaipilot.standalone.ollamaModel": "codegemma:2b",
+  "localaipilot.standalone.ollamaCodeModel": "codegemma:2b",
+  "localaipilot.general.inlineSuggestions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true
+}
