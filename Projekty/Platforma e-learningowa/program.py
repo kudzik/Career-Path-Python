@@ -40,23 +40,33 @@ cur.executescript(
 
 con.commit()
 
-cur.execute("SELECT * FROM instructor")
-res = cur.fetchall()
-
-# for row in res:
-#     print(row[1], row[2])
-
 
 # KURSY
 # Odczyt pliku load_data.sql
-with open('Projekty/Platforma e-learningowa/load_data.sql', 'r') as f:
+with open('Projekty/Platforma e-learningowa/load_data.sql', 'r', encoding='utf-8') as f:
     sql = f.read()
 
 
 # Wykonanie skryptu SQL
 cur.executescript(sql)
 
+
+cur.execute('''DROP INDEX IF EXISTS "course_instructor_id_idx"''')
+cur.execute('''CREATE INDEX IF NOT EXISTS "course_instructor_id_idx" 
+ON "course" ("instructor_id")''')
+
+
 # # Commit zmian
 con.commit()
 
+cur.execute("SELECT title FROM course")
+res = cur.fetchall()
+
+for row in res:
+    print(row[0])
+
+
 con.close()
+
+# Koniec cwiczenie 8 dozrobienia
+# https://www.udemy.com/course/cwiczenia-python-sql-sqlite3-bazy-danych-sqlite/learn/quiz/5250320#overview
